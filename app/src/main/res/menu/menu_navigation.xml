@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/ic_baseline_dashboard"
+        android:title="Home"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+    <item
+        android:id="@+id/menuKuliah"
+        android:icon="@drawable/ic_baseline_kuliah"
+        android:title="Kuliah"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+    <item
+        android:id="@+id/menuPraktikum"
+        android:icon="@drawable/ic_baseline_praktikum"
+        android:title="Praktikum"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+</menu>

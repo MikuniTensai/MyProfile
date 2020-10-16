@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorTextBackground"
+    tools:context=".FragmentMyProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageHeader"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/tvDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_21sdp"
+                android:layout_marginRight="@dimen/_21sdp"
+                android:layout_marginLeft="@dimen/_21sdp"
+                android:layout_marginTop="@dimen/_42sdp"
+                android:text="@string/wellcome_to_my_dashboard"
+                android:textColor="@color/colorSelectedMenu"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_marginStart="@dimen/_21sdp"
+                android:layout_marginEnd="@dimen/_21sdp"
+                android:layout_marginBottom="@dimen/_21sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp"
+                android:src="@drawable/profile"
+                android:paddingBottom="@dimen/_21sdp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                app:layout_constraintBottom_toBottomOf="@id/imageHeader"
+                app:layout_constraintTop_toBottomOf="@id/imageHeader"/>
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/mochamad_yusuf"
+                android:textColor="@color/colorSelectedMenu"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/profile_image"
+                app:layout_constraintEnd_toStartOf="@id/profile"
+                app:layout_constraintTop_toBottomOf="@id/profile_image"
+                app:tint="@color/colorTextPrimary"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_21sdp"
+                android:layout_marginEnd="@dimen/_21sdp"
+                android:layout_marginBottom="@dimen/_21sdp"
+                android:paddingTop="@dimen/_52sdp"
+                android:textAlignment="textStart"
+                android:text="Address : Jl. Magersari, Magasari, Kutorejo, Kec. Pandaan, Pasuruan, Jawa Timur 67156"
+                android:textColor="@color/colorSelectedMenu"
+                android:textSize="@dimen/_12ssp"
+                android:justificationMode="inter_word"
+                app:layout_constraintBottom_toBottomOf="@id/profile"
+                app:layout_constraintEnd_toStartOf="@id/address"
+                app:layout_constraintTop_toBottomOf="@id/profile"
+                app:tint="@color/colorTextPrimary"/>
+
+            <TextView
+                android:id="@+id/Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_21sdp"
+                android:layout_marginEnd="@dimen/_21sdp"
+                android:layout_marginBottom="@dimen/_21sdp"
+                android:paddingTop="@dimen/_32sdp"
+                android:textAlignment="textStart"
+                android:text="Status : Pelajar"
+                android:textColor="@color/colorSelectedMenu"
+                android:textSize="@dimen/_12ssp"
+                android:justificationMode="inter_word"
+                app:layout_constraintBottom_toBottomOf="@id/address"
+                app:layout_constraintEnd_toStartOf="@id/Status"
+                app:layout_constraintTop_toBottomOf="@id/address"
+                app:tint="@color/colorTextPrimary"/>
+
+            <TextView
+                android:id="@+id/ttl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_21sdp"
+                android:layout_marginEnd="@dimen/_21sdp"
+                android:layout_marginBottom="@dimen/_21sdp"
+                android:paddingTop="@dimen/_32sdp"
+                android:textAlignment="textStart"
+                android:text="Date of Birth : Pasuruan, 23 December 1999"
+                android:textColor="@color/colorSelectedMenu"
+                android:textSize="@dimen/_12ssp"
+                android:justificationMode="inter_word"
+                app:layout_constraintBottom_toBottomOf="@id/Status"
+                app:layout_constraintEnd_toStartOf="@id/ttl"
+                app:layout_constraintTop_toBottomOf="@id/Status"
+                app:tint="@color/colorTextPrimary"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        app:backgroundColor="@color/colorBackground"
+        app:iconSize="@dimen/_18sdp"
+        app:iconTint="@color/colorTextPrimary"
+        app:iconTintActive="@color/colorWhite"
+        app:indicatorColor="@color/colorSelectedMenu"
+        app:indicatorRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation"
+        app:textColor="@color/colorWhite"
+        app:textSize="@dimen/_12ssp"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

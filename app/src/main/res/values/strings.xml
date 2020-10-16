@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyProfile</string>
+    <string name="mochamad_yusuf">Mochamad Yusuf</string>
+    <string name="wellcome_to_my_dashboard">Life is a journey to be experienced, not a problem to be solved</string>
+    <string name="all">All</string>
+    <string name="youtube">Youtube</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="twitter">Twitter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
