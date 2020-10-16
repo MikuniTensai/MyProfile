@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorTextBackground"
-    tools:context=".FragmentMyProfile">
+    tools:context=".Fragment.FragmentMyProfile">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.core.widget.NestedScrollView

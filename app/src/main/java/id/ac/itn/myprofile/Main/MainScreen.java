@@ -1,21 +1,18 @@
-package id.ac.itn.myprofile;
+package id.ac.itn.myprofile.Main;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.makeramen.roundedimageview.RoundedImageView;
-
+import id.ac.itn.myprofile.Fragment.FragmentMyProfile;
+import id.ac.itn.myprofile.R;
 import me.ibrahimsn.lib.SmoothBottomBar;
 
 public class MainScreen extends AppCompatActivity implements View.OnClickListener {
@@ -50,20 +47,23 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
 
         ivMyprofile = findViewById(R.id.ivMyProfile);
         BottomBar = findViewById(R.id.BottomBar);
-//        BottomBar.setOnItemSelectedListener(i -> {
-//            switch (i){
-//                case 0:
+        BottomBar.setOnItemSelectedListener(i -> {
+            switch (i){
+                case 0:
+                    Intent home = new Intent(this, MainScreen.class);
+                    startActivity(home);
 //                    Toast.makeText(getBaseContext(), "Home", Toast.LENGTH_SHORT).show();
-//                    break;
-//                case 1:
-//                    Toast.makeText(getBaseContext(), "Kuliah", Toast.LENGTH_SHORT).show();
-//                    break;
-//                case 2:
-//                    Toast.makeText(getBaseContext(), "Praktikum", Toast.LENGTH_SHORT).show();
-//                    break;
-//            }
-//        });
-
+                    break;
+                case 1:
+                    Intent kuliah = new Intent(this, MainKuliah.class);
+                    startActivity(kuliah);
+                    break;
+                case 2:
+                    Intent praktikum = new Intent(this, MainPraktikum.class);
+                    startActivity(praktikum);
+                    break;
+            }
+        });
     }
 
     @Override
@@ -85,6 +85,7 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
 
         ivMyprofile.setOnClickListener(this);
         BottomBar.setOnClickListener(this);
+
     }
 
     @Override
@@ -141,11 +142,6 @@ public class MainScreen extends AppCompatActivity implements View.OnClickListene
                         .add(R.id.frame_cointainer, fragmentmyprofile, FragmentMyProfile.class.getSimpleName())
                         .commit();
             }
-        }
-        if (view.getId() == R.id.BottomBar){
-            android.content.Intent reload = new Intent(this, MainScreen.class);
-            startActivity(reload);
-            Toast.makeText(getBaseContext(), "Home", Toast.LENGTH_SHORT).show();
         }
     }
 }

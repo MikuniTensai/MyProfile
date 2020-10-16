@@ -1,4 +1,4 @@
-package id.ac.itn.myprofile;
+package id.ac.itn.myprofile.Main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.makeramen.roundedimageview.RoundedImageView;
+
+import id.ac.itn.myprofile.R;
 
 public class MainActivity extends AppCompatActivity {
 
