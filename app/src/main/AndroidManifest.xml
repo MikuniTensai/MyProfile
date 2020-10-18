@@ -12,6 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Main.Praktikum.Tugas2.MainBiodata"></activity>
+        <activity android:name=".Main.Praktikum.Tugas2.MainTugas_2" />
         <activity android:name=".Main.MainPraktikum" />
         <activity android:name=".Main.MainKuliah" />
         <activity android:name=".Main.MainActivity" />

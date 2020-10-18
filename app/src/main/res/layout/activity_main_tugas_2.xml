@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Praktikum.Tugas2.MainTugas_2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Im Yusuf"
+        android:textAlignment="center"
+        android:textSize="@dimen/_18ssp"
+        android:fontFamily="serif"
+        android:paddingTop="@dimen/_48sdp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_62sdp"
+        android:layout_marginEnd="@dimen/_62ssp"
+        android:layout_marginTop="@dimen/_16ssp"
+        android:text="Input"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/custom_button_tugas_2"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
