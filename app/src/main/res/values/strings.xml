@@ -11,4 +11,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lihat_sekarang">Lihat Sekarang</string>
+    <string name="tugas">Tugas</string>
+    <string name="pdf_docx">PDF / Docx / File</string>
+    <string name="video">Video</string>
+    <string name="next_fragment">Next Fragment</string>
+    <string name="back_fragment">Back Fragment</string>
+    <string name="mochamad_yusuf_1818046">Mochamad Yusuf | 1818046</string>
 </resources>

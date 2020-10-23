@@ -6,22 +6,24 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 
-import id.ac.itn.myprofile.Adapter.PAdapter;
+import id.ac.itn.myprofile.Adapter.KAdapter;
 import id.ac.itn.myprofile.Model.KModel;
 import id.ac.itn.myprofile.R;
 import me.ibrahimsn.lib.SmoothBottomBar;
 
-public class MainKuliah extends AppCompatActivity {
+public class MainKuliah extends AppCompatActivity{
 
     SmoothBottomBar BottomBar;
+    ViewPager viewpager;
 
     private ActionBar actionbar;
     private ViewPager viewPager;
     private ArrayList<KModel> modelArrayList;
-    private PAdapter pAdapter;
+    private KAdapter kAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,30 +81,34 @@ public class MainKuliah extends AppCompatActivity {
 
         //add items to list
         modelArrayList.add(new KModel(
-                "Tugas 1 - Instalasi Android Studio",
-                "Android Studio adalah lingkungan pengembangan terintegrasi resmi untuk sistem operasi Android Google, yang dibangun di perangkat lunak IntelliJ IDEA JetBrains dan dirancang khusus untuk pengembangan Android.",
-                "10/10/2020",
-                R.drawable.brochure));
+                "Pertemuan 1",
+                "RPS & Pengantar Mobile Programming",
+                "21/09/2020",
+                R.drawable.capture));
         modelArrayList.add(new KModel(
-                "BAB 2 - Intent",
-                "Intent adalah mekanisme untuk melakukan sebuah aksi dan komunikasi antar komponen aplikasi pada platform Android. Atau dapat juga dijelaskan sebagai sebuah object yang memungkinkan kita untuk dapat berkomunikasi antara Activity satu dengan Activity lainnya.",
-                "18/10/2020",
-                R.drawable.namecard));
+                "Pertemuan 2",
+                "Activity and Intent",
+                "28/09/2020",
+                R.drawable.capture));
         modelArrayList.add(new KModel(
-                "Tugas 3",
-                "Description 03",
-                "17/10/2020",
-                R.drawable.poster));
+                "Pertemuan 3",
+                "View & ViewGroup",
+                "05/10/2020",
+                R.drawable.capture));
         modelArrayList.add(new KModel(
-                "Tugas 4",
-                "Description 04",
-                "17/10/2020",
-                R.drawable.sticker));
-
+                "Pertemuan 4",
+                "Fragment and Style & Themes",
+                "12/10/2020",
+                R.drawable.capture));
+        modelArrayList.add(new KModel(
+                "Pertemuan 5",
+                "RecyclerView",
+                "12/10/2020",
+                R.drawable.capture));
         //setup adapter
-        pAdapter = new PAdapter(this, modelArrayList);
+        kAdapter = new KAdapter(this, modelArrayList);
         //set adapter to view pager
-        viewPager.setAdapter(pAdapter);
+        viewPager.setAdapter(kAdapter);
         //set default padding
         viewPager.setPadding(100,0,100,0);
 

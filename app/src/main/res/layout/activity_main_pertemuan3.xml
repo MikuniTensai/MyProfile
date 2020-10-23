@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Main.Kuliah.Pertemuan1.MainPertemuan3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/pdf_docx"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_height="@dimen/_240sdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toBottomOf="@id/file"
+                tools:layout_editor_absoluteX="0dp"/>
+
+            <TextView
+                android:id="@+id/tugas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/tugas"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/webview"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <WebView
+                android:id="@+id/webview1"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_height="@dimen/_240sdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toBottomOf="@id/tugas"
+                tools:layout_editor_absoluteX="0dp"/>
+
+            <TextView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/video"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/webview1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/videoview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_240sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:videoId="v1hpaQdgutY"
+                app:autoPlay="false"
+                app:showFullScreenButton="false"
+                app:layout_constraintTop_toBottomOf="@id/video"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:text="@string/tugas"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="serif"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/custom_button_tugas_2"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/videoview"
+                app:layout_constraintStart_toStartOf="@id/videoview"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/button"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        app:backgroundColor="@color/colorBackground"
+        app:iconSize="@dimen/_18sdp"
+        app:iconTint="@color/colorTextPrimary"
+        app:iconTintActive="@color/colorWhite"
+        app:indicatorColor="@color/colorSelectedMenu"
+        app:indicatorRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation"
+        app:textColor="@color/colorWhite"
+        app:textSize="@dimen/_12ssp"
+        app:activeItem="1"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

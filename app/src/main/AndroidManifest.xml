@@ -4,6 +4,9 @@
     package="id.ac.itn.myprofile">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main.Praktikum.Tugas2.MainBiodata"></activity>
+        <activity android:name=".Main.Praktikum.Tugas3.MainTugas_3" />
+        <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan6" />
+        <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan5" />
+        <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan4" />
+        <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan3" />
+        <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan2" />
+        <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan1" />
+        <activity android:name=".Main.Praktikum.Tugas2.MainBiodata" />
         <activity android:name=".Main.Praktikum.Tugas2.MainTugas_2" />
         <activity android:name=".Main.MainPraktikum" />
         <activity android:name=".Main.MainKuliah" />

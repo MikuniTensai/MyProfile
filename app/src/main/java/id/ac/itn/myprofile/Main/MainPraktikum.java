@@ -79,26 +79,15 @@ public class MainPraktikum extends AppCompatActivity {
 
         //add items to list
         modelArrayList.add(new KModel(
-                "Tugas 5",
-                "Description 05",
+                "Tugas 1 - Praktikum 2",
+                "Membuat Inpitan Nama",
                 "17/10/2020",
-                R.drawable.brochure));
+                R.drawable.capture));
         modelArrayList.add(new KModel(
-                "Tugas 6",
-                "Description 06",
-                "17/10/2020",
-                R.drawable.namecard));
-        modelArrayList.add(new KModel(
-                "Tugas 7",
-                "Description 07",
-                "17/10/2020",
-                R.drawable.poster));
-        modelArrayList.add(new KModel(
-                "Tugas 8",
-                "Description 08",
-                "17/10/2020",
-                R.drawable.sticker));
-
+                "Tugas 2 - Praktikum 3",
+                "Membuat Fragment",
+                "23/10/2020",
+                R.drawable.capture));
         //setup adapter
         pAdapter = new PAdapter(this, modelArrayList);
         //set adapter to view pager

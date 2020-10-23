@@ -2,11 +2,9 @@ package id.ac.itn.myprofile.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,21 +14,25 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.ArrayList;
 
-import id.ac.itn.myprofile.Main.MainKuliah;
+import id.ac.itn.myprofile.Main.Kuliah.Pertemuan1.MainPertemuan1;
+import id.ac.itn.myprofile.Main.Kuliah.Pertemuan1.MainPertemuan2;
+import id.ac.itn.myprofile.Main.Kuliah.Pertemuan1.MainPertemuan3;
+import id.ac.itn.myprofile.Main.Kuliah.Pertemuan1.MainPertemuan4;
+import id.ac.itn.myprofile.Main.Kuliah.Pertemuan1.MainPertemuan5;
+import id.ac.itn.myprofile.Main.Kuliah.Pertemuan1.MainPertemuan6;
 import id.ac.itn.myprofile.Main.MainPraktikum;
 import id.ac.itn.myprofile.Main.MainScreen;
 import id.ac.itn.myprofile.Main.Praktikum.Tugas2.MainTugas_2;
-import id.ac.itn.myprofile.Main.Praktikum.Tugas3.MainTugas_3;
 import id.ac.itn.myprofile.Model.KModel;
 import id.ac.itn.myprofile.R;
 
-public class PAdapter extends PagerAdapter {
+public class KAdapter extends PagerAdapter {
     private Context context;
     private ArrayList<KModel> modelArrayList;
 
     int i;
 
-    public PAdapter(Context context, ArrayList<KModel> modelArrayList) {
+    public KAdapter(Context context, ArrayList<KModel> modelArrayList) {
         this.context = context;
         this.modelArrayList = modelArrayList;
     }
@@ -75,11 +77,25 @@ public class PAdapter extends PagerAdapter {
                 Class c=null;
                 switch (position){
                     case 0:
-                        c = MainTugas_2.class;
+                        c = MainPertemuan1.class;
                         break;
                     case 1:
-                        c = MainTugas_3.class;
+                        c = MainPertemuan2.class;
                         break;
+                    case 2:
+                        c = MainPertemuan3.class;
+                        break;
+                    case 3:
+                        c = MainPertemuan4.class;
+                        break;
+                    case 4:
+                        c = MainPertemuan5.class;
+                        break;
+                    case 5:
+                        c = MainPertemuan6.class;
+                        break;
+                    default:
+                        c = MainScreen.class;
                 }
                 Intent intent = new Intent(context, c);
                 context.startActivity(intent);
