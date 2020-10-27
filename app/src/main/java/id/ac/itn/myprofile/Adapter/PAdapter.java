@@ -2,11 +2,9 @@ package id.ac.itn.myprofile.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,11 +14,9 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.ArrayList;
 
-import id.ac.itn.myprofile.Main.MainKuliah;
-import id.ac.itn.myprofile.Main.MainPraktikum;
-import id.ac.itn.myprofile.Main.MainScreen;
 import id.ac.itn.myprofile.Main.Praktikum.Tugas2.MainTugas_2;
 import id.ac.itn.myprofile.Main.Praktikum.Tugas3.MainTugas_3;
+import id.ac.itn.myprofile.Main.Praktikum.Tugas4.MainTugas_4;
 import id.ac.itn.myprofile.Model.KModel;
 import id.ac.itn.myprofile.R;
 
@@ -79,6 +75,9 @@ public class PAdapter extends PagerAdapter {
                         break;
                     case 1:
                         c = MainTugas_3.class;
+                        break;
+                    case 2:
+                        c = MainTugas_4.class;
                         break;
                 }
                 Intent intent = new Intent(context, c);

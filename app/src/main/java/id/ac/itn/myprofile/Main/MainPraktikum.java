@@ -79,14 +79,19 @@ public class MainPraktikum extends AppCompatActivity {
 
         //add items to list
         modelArrayList.add(new KModel(
-                "Tugas 1 - Praktikum 2",
+                "Tugas 2 - Praktikum 2",
                 "Membuat Inpitan Nama",
                 "17/10/2020",
                 R.drawable.capture));
         modelArrayList.add(new KModel(
-                "Tugas 2 - Praktikum 3",
+                "Tugas 3 - Praktikum 3",
                 "Membuat Fragment",
                 "23/10/2020",
+                R.drawable.capture));
+        modelArrayList.add(new KModel(
+                "Tugas 4 - Praktikum 4",
+                "Membuat NAVIGASI DAN ACTION BAR",
+                "27/10/2020",
                 R.drawable.capture));
         //setup adapter
         pAdapter = new PAdapter(this, modelArrayList);

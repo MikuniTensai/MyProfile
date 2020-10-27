@@ -16,11 +16,8 @@ public class MainTugas_3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_tugas_3);
-
         FragmentManager fragmentManager = getSupportFragmentManager();
-
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-
         FragmentA fragment = new FragmentA();
         transaction.add(R.id.frame, fragment);
         transaction.addToBackStack("fragmentA");

@@ -17,4 +17,16 @@
     <string name="next_fragment">Next Fragment</string>
     <string name="back_fragment">Back Fragment</string>
     <string name="mochamad_yusuf_1818046">Mochamad Yusuf | 1818046</string>
+    <string name="title_activity_main_tugas4">MainTugas4</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mochamad Yusuf</string>
+    <string name="nav_header_subtitle">Tugas 4 Praktikum</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="kalkulator">Kalkulator</string>
 </resources>

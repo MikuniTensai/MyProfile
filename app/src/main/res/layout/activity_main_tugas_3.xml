@@ -11,20 +11,6 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/frame">
-
-<!--        <fragment-->
-<!--            android:id="@+id/fragment_a"-->
-<!--            android:name="id.ac.itn.myprofile.Main.Praktikum.Tugas3.Fragment.FragmentA"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"/>-->
-
-<!--        <fragment-->
-<!--            android:id="@+id/fragment_b"-->
-<!--            android:name="id.ac.itn.myprofile.Main.Praktikum.Tugas3.Fragment.FragmentB"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"/>-->
-
-    </FrameLayout>
+        android:id="@+id/frame"/>
 
 </LinearLayout>
