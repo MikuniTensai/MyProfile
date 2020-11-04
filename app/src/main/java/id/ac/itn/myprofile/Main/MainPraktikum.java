@@ -93,6 +93,11 @@ public class MainPraktikum extends AppCompatActivity {
                 "Membuat NAVIGASI DAN ACTION BAR",
                 "27/10/2020",
                 R.drawable.capture));
+        modelArrayList.add(new KModel(
+                "Tugas 5 - Praktikum 5",
+                "Membuat RecycleView",
+                "04/11/2020",
+                R.drawable.capture));
         //setup adapter
         pAdapter = new PAdapter(this, modelArrayList);
         //set adapter to view pager

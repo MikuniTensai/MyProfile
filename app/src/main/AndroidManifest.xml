@@ -17,10 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Main.Praktikum.Tugas5.MainTugas_5"></activity>
         <activity
             android:name=".Main.Praktikum.Tugas4.MainTugas_4"
             android:label="@string/title_activity_main_tugas4"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Main.Praktikum.Tugas3.MainTugas_3" />
         <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan6" />
         <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan5" />

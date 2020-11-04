@@ -29,4 +29,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="kalkulator">Kalkulator</string>
+    <string name="nama_mahasiswa">Nama Mahasiswa</string>
+    <string name="detail">Detail</string>
 </resources>

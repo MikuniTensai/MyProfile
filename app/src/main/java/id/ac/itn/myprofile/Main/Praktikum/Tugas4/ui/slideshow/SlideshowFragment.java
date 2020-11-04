@@ -35,19 +35,19 @@ public class SlideshowFragment extends Fragment {
                 final EditText edtNim
                         =root.findViewById(R.id.input_nim);
                 final EditText edtJurusan
-                        =root.findViewById(R.id.input_jur);
+                        =root.findViewById(R.id.input_jurusan);
                 final EditText edtAngkatan
-                        =root.findViewById(R.id.input_ang);
+                        =root.findViewById(R.id.input_angkatan);
                 final TextView tvNama =
                         root.findViewById(R.id.output_nama);
                 final TextView tvNim =
                         root.findViewById(R.id.output_nim);
                 final TextView tvJurusan =
-                        root.findViewById(R.id.output_jur);
+                        root.findViewById(R.id.output_jurusan);
                 final TextView tvAngkatan =
-                        root.findViewById(R.id.output_ang);
+                        root.findViewById(R.id.output_angkatan);
                 final Button btnTampil=
-                        root.findViewById(R.id.tampil);
+                        root.findViewById(R.id.btn_tampil);
 
                 btnTampil.setOnClickListener(new View.OnClickListener() {
                     @Override

@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import id.ac.itn.myprofile.Main.Praktikum.Tugas2.MainTugas_2;
 import id.ac.itn.myprofile.Main.Praktikum.Tugas3.MainTugas_3;
 import id.ac.itn.myprofile.Main.Praktikum.Tugas4.MainTugas_4;
+import id.ac.itn.myprofile.Main.Praktikum.Tugas5.MainTugas_5;
 import id.ac.itn.myprofile.Model.KModel;
 import id.ac.itn.myprofile.R;
 
@@ -78,6 +79,9 @@ public class PAdapter extends PagerAdapter {
                         break;
                     case 2:
                         c = MainTugas_4.class;
+                        break;
+                    case 3:
+                        c = MainTugas_5.class;
                         break;
                 }
                 Intent intent = new Intent(context, c);
