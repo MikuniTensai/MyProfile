@@ -98,6 +98,11 @@ public class MainPraktikum extends AppCompatActivity {
                 "Membuat RecycleView",
                 "04/11/2020",
                 R.drawable.capture));
+        modelArrayList.add(new KModel(
+                "Tugas 6 - Praktikum 6",
+                "Membuat Service BroadcastReceiver",
+                "04/11/2020",
+                R.drawable.capture));
         //setup adapter
         pAdapter = new PAdapter(this, modelArrayList);
         //set adapter to view pager
