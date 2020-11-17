@@ -29,7 +29,7 @@ public class MainPraktikum extends AppCompatActivity {
 
         BottomBar = findViewById(R.id.BottomBar);
         BottomBar.setOnItemSelectedListener(i -> {
-            switch (i){
+            switch (i) {
                 case 0:
                     Intent home = new Intent(this, MainScreen.class);
                     startActivity(home);
@@ -98,16 +98,21 @@ public class MainPraktikum extends AppCompatActivity {
                 "Membuat RecycleView",
                 "04/11/2020",
                 R.drawable.capture));
+//        modelArrayList.add(new KModel(
+//                "Tugas 6 - Praktikum 6",
+//                "Membuat Service BroadcastReceiver",
+//                "10/11/2020",
+//                R.drawable.capture));
         modelArrayList.add(new KModel(
-                "Tugas 6 - Praktikum 6",
-                "Membuat Service BroadcastReceiver",
-                "04/11/2020",
+                "Tugas 7 - Praktikum 7",
+                "Membuat SQL Lite",
+                "17/11/2020",
                 R.drawable.capture));
         //setup adapter
         pAdapter = new PAdapter(this, modelArrayList);
         //set adapter to view pager
         viewPager.setAdapter(pAdapter);
         //set default padding
-        viewPager.setPadding(100,0,100,0);
+        viewPager.setPadding(100, 0, 100, 0);
     }
 }

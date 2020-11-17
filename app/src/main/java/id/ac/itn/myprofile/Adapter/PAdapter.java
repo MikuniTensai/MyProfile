@@ -19,6 +19,7 @@ import id.ac.itn.myprofile.Main.Praktikum.Tugas3.MainTugas_3;
 import id.ac.itn.myprofile.Main.Praktikum.Tugas4.MainTugas_4;
 import id.ac.itn.myprofile.Main.Praktikum.Tugas5.MainTugas_5;
 import id.ac.itn.myprofile.Main.Praktikum.Tugas6.MainTugas_6;
+import id.ac.itn.myprofile.Main.Praktikum.Tugas7.MainTugas_7;
 import id.ac.itn.myprofile.Model.KModel;
 import id.ac.itn.myprofile.R;
 
@@ -85,7 +86,7 @@ public class PAdapter extends PagerAdapter {
                         c = MainTugas_5.class;
                         break;
                     case 4:
-                        c = MainTugas_6.class;
+                        c = MainTugas_7.class;
                         break;
                 }
                 Intent intent = new Intent(context, c);

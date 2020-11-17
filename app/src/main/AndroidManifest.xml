@@ -17,7 +17,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main.Praktikum.Tugas6.MainTugas_6"></activity>
+        <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan8"></activity>
+        <activity android:name=".Main.Kuliah.Pertemuan1.MainPertemuan7" />
+        <activity android:name=".Main.Praktikum.Tugas7.MainUpdel" />
+        <activity android:name=".Main.Praktikum.Tugas7.MainRead" />
+        <activity android:name=".Main.Praktikum.Tugas7.MainCreate" />
+        <activity android:name=".Main.Praktikum.Tugas7.MainTugas_7" />
+        <activity android:name=".Main.Praktikum.Tugas6.MainTugas_6" />
         <activity
             android:name=".Main.Praktikum.Tugas5.MainTugas_5"
             android:theme="@style/AppTheme1" />
@@ -44,7 +50,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".Main.Praktikum.Tugas6.AlertReceiver"/>
+
+        <receiver android:name=".Main.Praktikum.Tugas6.AlertReceiver" />
     </application>
 
 </manifest>
